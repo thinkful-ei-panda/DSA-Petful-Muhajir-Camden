@@ -39,23 +39,26 @@ function getRandom(arr) {
 
 const types = ['cats', 'dogs'];
 
-function removePerson() {
+function removeFromQueue() {
   if (store.people.includes(people.show()) || randomPeople.includes(people.show())) {
     dequeue()
     petsService.dequeue(getRandom(types))
   }
 }
 
-setInterval(() => removePerson(), 5000)
+setInterval(() => removeFromQueue(), 5000)
 
 // if less < 5 people in q, add someone
-function addPeople() {
+function addToQueue() {
   if (people.length < 5) {
     people.enqueue(getRandom(randomPeople))
+    petsService.enqueue('dogs', getRandom(store.dogs))
+    petsService.enqueue('cats', getRandom(store.cats))
+    console.log(petsService.get())
   }
 }
 
-setInterval(() => addPeople(), 5000)
+setInterval(() => addToQueue(), 5000)
 
 module.exports = {
   get,

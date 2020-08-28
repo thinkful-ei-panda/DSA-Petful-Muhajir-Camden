@@ -26,7 +26,11 @@ module.exports = {
   dequeue(type) {
     // Remove a pet from the queue.
     return pets[type].dequeue();
-  }
-}
+  },
+
+  enqueue(type, data) {
+    return pets[type].enqueue(data);
+  },
+};
 
 
