@@ -1,7 +1,7 @@
 # Petful Server
 
 Link to live app: https://dsa-petful-client-muhajir-camden.vercel.app/
-Link to client repo: https://github.com/thinkful-ei-panda/dsa-petful-client-muhajir-camden
+Link to client repo: https://github.com/CamdenQ/dsa-petful-client-muhajir-camden
 Link to API repo: https://github.com/thinkful-ei-panda/DSA-Petful-Muhajir-Camden
 Name of your pair: Muhajir and Camden
 A summary section. This should have a concise explanation of what the petful project does.
